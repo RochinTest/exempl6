@@ -1,16 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
+    private final static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        if (sc.hasNextInt()) {
-            if (sc.nextInt() % 2 == 0) {
-                System.out.println("true");
-            } else {
-                System.out.println("false");
-            }
-        }
+        if (sc.hasNextInt()) System.out.println(0 == sc.nextInt() % 2);
     }
 }
